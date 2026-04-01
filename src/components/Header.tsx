@@ -32,10 +32,10 @@ export const Header = () => {
       <div className="hero">
         <svg className="button-icon" role="presentation" aria-hidden="true">
           <use href="javascript-icon.svg"></use>
-        </svg>{' '}
+        </svg>
         /
         <svg className="button-icon" role="presentation" aria-hidden="true">
-          <use href="terminal.svg#terminal"></use>
+          <use href="terminal.svg"></use>
         </svg>
       </div>
       <header className="cv-header">
