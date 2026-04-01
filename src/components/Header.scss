@@ -1,16 +1,25 @@
+.button-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .cv-header {
   display: flex;
   flex-direction: column;
-  .cv-header-name {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+  align-items: center;
 
   .cv-theme-toggle {
     position: absolute;
     right: 0;
     top: 0;
+    display: flex;
+    align-items: center;
     background: none;
     border: 1px solid var(--border);
     border-radius: 8px;

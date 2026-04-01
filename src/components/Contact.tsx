@@ -1,5 +1,5 @@
-import data from '../data.json'
-import './Contact.scss'
+import data from '../data.json';
+import './Contact.scss';
 
 export const Contact = () => {
   return (
@@ -30,5 +30,5 @@ export const Contact = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};

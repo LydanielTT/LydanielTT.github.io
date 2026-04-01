@@ -1,18 +1,13 @@
-import './App.css'
-import { Contact } from './components/Contact'
-import { Header } from './components/Header'
-import { Language } from './components/Language'
-import { Profile } from './components/Profile'
+import './App.css';
+import { Contact } from './components/Contact';
+import { Header } from './components/Header';
+import { Language } from './components/Language';
+import { Profile } from './components/Profile';
 
 export const App = () => {
   return (
     <>
       <section id="center">
-        <div className="hero">
-          <svg className="button-icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#github-icon"></use>
-          </svg>
-        </div>
         <Header />
       </section>
 
@@ -34,5 +29,5 @@ export const App = () => {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
-}
+  );
+};

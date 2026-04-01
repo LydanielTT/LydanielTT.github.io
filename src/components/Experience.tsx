@@ -1,5 +1,5 @@
-import './Experience.scss'
-import data from '../data.json'
+import './Experience.scss';
+import data from '../data.json';
 
 export const Experience = () => {
   return (
@@ -24,5 +24,5 @@ export const Experience = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

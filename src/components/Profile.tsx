@@ -1,6 +1,6 @@
-import { Skills } from './Skills'
-import { Experience } from './Experience'
-import { Education } from './Education'
+import { Skills } from './Skills';
+import { Experience } from './Experience';
+import { Education } from './Education';
 
 export const Profile = () => {
   return (
@@ -15,5 +15,5 @@ export const Profile = () => {
         </main>
       </div>
     </div>
-  )
-}
+  );
+};

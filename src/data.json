@@ -9,12 +9,34 @@
     "github": "https://github.com/LydanielTT"
   },
   "skills": [
-    "Javascript / Typescript (React, Angular, NodeJs)",
-    "Image processing (OpenCV)",
-    "Database (postgreSQL, Oracle, MongoDB)",
-    "CI/CD (Jenkins, Azure devOps, Kubernetes, github actions)",
-    "Docker, Auth0, oAuth 2.0",
-    "Monitoring (ELK, Grafana, Lens)"
+    {
+      "emoji": "🌐",
+      "skill": "Javascript / Typescript (React, Angular, NodeJs)"
+    },
+    {
+      "emoji": "🎨",
+      "skill": "Image processing (OpenCV)"
+    },
+    {
+      "emoji": "💾",
+      "skill": "Database (postgreSQL, Oracle, MongoDB)"
+    },
+    {
+      "emoji": "🔄",
+      "skill": "CI/CD (Jenkins, Azure devOps, Kubernetes, github actions)"
+    },
+    {
+      "emoji": "🐳",
+      "skill": "Docker"
+    },
+    {
+      "emoji": "🔒",
+      "skill": "oAuth 2.0"
+    },
+    {
+      "emoji": "🔍",
+      "skill": "Monitoring (ELK, Grafana, Lens, PostHog 🦔)"
+    }
   ],
   "languages": [
     {

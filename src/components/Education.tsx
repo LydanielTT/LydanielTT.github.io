@@ -1,4 +1,4 @@
-import data from '../data.json'
+import data from '../data.json';
 
 export const Education = () => {
   return (
@@ -22,5 +22,5 @@ export const Education = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

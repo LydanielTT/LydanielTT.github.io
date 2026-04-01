@@ -1,5 +1,5 @@
-import './Skills.scss'
-import data from '../data.json'
+import './Skills.scss';
+import data from '../data.json';
 
 export const Skills = () => {
   return (
@@ -7,9 +7,11 @@ export const Skills = () => {
       <h2>Expertise Skills</h2>
       <ul>
         {data.skills.map((s) => (
-          <li key={s}>{s}</li>
+          <li key={s.skill}>
+            {s.emoji} {s.skill}
+          </li>
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};

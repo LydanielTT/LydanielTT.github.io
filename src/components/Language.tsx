@@ -1,5 +1,5 @@
-import data from '../data.json'
-import './Language.scss'
+import data from '../data.json';
+import './Language.scss';
 
 export const Language = () => {
   return (
@@ -18,5 +18,5 @@ export const Language = () => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
