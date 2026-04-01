@@ -7,7 +7,6 @@ export const Education = () => {
       <div className="cv-timeline">
         {data.education.map((edu) => (
           <div key={edu.school} className="cv-timeline-item">
-            <div className="cv-timeline-marker" />
             <div className="cv-timeline-content">
               <p className="cv-period">{edu.year}</p>
               <p className="cv-role">{edu.degree}</p>
