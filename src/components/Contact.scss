@@ -1,0 +1,32 @@
+$orange: #e8951a;
+$dark: #1e1e2e;
+$text: #fff;
+
+.cv-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  #title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      flex: 0 1 auto;
+      display: flex;
+    }
+  }
+}

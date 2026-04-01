@@ -1,0 +1,27 @@
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+
+  // Expertise skills — pill tags
+  &:first-child ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    li {
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      line-height: 1.5;
+    }
+  }
+
+  // Languages — clean rows
+}

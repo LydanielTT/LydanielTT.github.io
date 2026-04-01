@@ -1,0 +1,35 @@
+.cv-header {
+  display: flex;
+  flex-direction: column;
+  .cv-header-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cv-theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    transition:
+      border-color 0.2s,
+      background 0.2s;
+
+    &:hover {
+      background: var(--accent-bg);
+      border-color: var(--accent-border);
+    }
+  }
+  .cv-header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
