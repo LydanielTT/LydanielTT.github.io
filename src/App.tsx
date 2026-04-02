@@ -1,22 +1,19 @@
 import { useRef } from 'react';
 import './App.css';
 import { Contact } from './components/Contact';
-import { ExperienceHelix } from './components/ExperienceHelix';
 import { Header } from './components/Header';
 import { Language } from './components/Language';
-import { Profile } from './components/Profile';
 import { ProgressRing } from './components/ProgressRing';
-import { useScrollY } from './hooks/useScrollY';
-
+import { Skills } from './components/Skills';
+import { Education } from './components/Education';
+import { Experience } from './components/Experience';
+import { Animation } from './components/Animation';
 export const App = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollY = useScrollY();
   return (
-    <div ref={sectionRef}>
-      <ExperienceHelix scrollY={scrollY} />
-      <ProgressRing sectionRef={sectionRef} />
+    <div id="main-container" ref={sectionRef}>
       <section id="center">
-        <Header />
+        <Header sectionRef={sectionRef} />
       </section>
 
       <div className="ticks"></div>
@@ -31,11 +28,17 @@ export const App = () => {
       </section>
 
       <div className="ticks"></div>
-      <section id="main-content">
-        <Profile />
+      <section id="skills">
+        <Skills />
       </section>
+      <Experience />
+
+      <Education />
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <div id="spacer"></div>
+      <Animation />
+      {/* <ExperienceHelix scrollY={scrollY} /> */}
+      <ProgressRing sectionRef={sectionRef} />
     </div>
   );
 };

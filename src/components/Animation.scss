@@ -1,0 +1,45 @@
+#animated-block {
+  animation-timeline: --custom_name_for_timeline;
+  animation-name: rolling;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-fill-mode: both;
+  z-index: 0;
+  height: 200px;
+  width: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: linear-gradient(135deg, var(--accent), #ff6b6b);
+  box-shadow: 0 0 60px rgba(170, 59, 255, 0.4);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-radius: 0%;
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg) scale(0.6);
+    border-radius: 50%;
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    transform: rotate(540deg) scale(0.8);
+    border-radius: 50%;
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+    border-radius: 0%;
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type RefObject } from 'react';
 
-export const useScrollY = () => {
+export const useScrollY = (ref: RefObject<HTMLDivElement | null>) => {
   const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
-    const handler = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handler, { passive: true });
-    return () => window.removeEventListener('scroll', handler);
-  }, []);
+    const el = ref?.current;
+    if (!el) return;
+    const handler = () => setScrollY(el.scrollTop);
+    el.addEventListener('scroll', handler, { passive: true });
+    return () => el.removeEventListener('scroll', handler);
+  }, [ref]);
   return scrollY;
 };

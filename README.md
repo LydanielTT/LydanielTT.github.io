@@ -28,7 +28,6 @@ src/
 └── hooks/
     ├── useScrollY.ts       # Track vertical scroll position
     ├── useScrollProgress.ts
-    ├── useScrollSnap.ts
     └── useTheme.ts
 ```
 

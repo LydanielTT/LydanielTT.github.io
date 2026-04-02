@@ -5,20 +5,19 @@ export const useScrollProgress = (sectionRef: RefObject<HTMLElement | null>) => 
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
     const update = () => {
-      const el = sectionRef.current;
-      if (!el) return;
-      const { top, height } = el.getBoundingClientRect();
-      const viewportH = window.innerHeight;
-      setInView(top < viewportH && top + height > 0);
-      const scrolled = Math.max(0, -top);
-      const scrollable = Math.max(1, height - viewportH);
+      const scrolled = el.scrollTop;
+      const scrollable = Math.max(1, el.scrollHeight - el.clientHeight);
+      setInView(true);
       setProgress(Math.min(1, scrolled / scrollable));
     };
 
-    window.addEventListener('scroll', update, { passive: true });
+    el.addEventListener('scroll', update, { passive: true });
     update();
-    return () => window.removeEventListener('scroll', update);
+    return () => el.removeEventListener('scroll', update);
   }, [sectionRef]);
 
   return { progress, inView };

@@ -3,7 +3,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -64,8 +64,8 @@
 
   .cv-theme-toggle {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
     display: flex;
     align-items: center;
     background: none;
