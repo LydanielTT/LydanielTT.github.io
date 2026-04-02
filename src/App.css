@@ -1,18 +1,16 @@
-#center {
+#skills {
+  border-top: 1px solid var(--border);
   display: flex;
-  flex-direction: column;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
-  padding: 32px 20px 24px;
+  align-items: center;
 }
 
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
-
-  & > div {
+  flex-direction: row;
+  & > div,
+  & > header {
     flex: 1 0 0;
     padding: 32px;
     @media (max-width: 1024px) {
@@ -98,9 +96,46 @@
   }
 }
 
-#main-content {
+#education {
   border-top: 1px solid var(--border);
   padding: 10px 0;
+}
+
+#main-container {
+  width: 100%;
+  overflow-y: scroll;
+  scroll-timeline-name: --custom_name_for_timeline;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  background-image: url('/background.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    background-image: url('/background-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+section {
+  z-index: 1;
+  scroll-snap-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & > div,
+  & > header,
+  & > h2 {
+    z-index: inherit;
+  }
 }
 
 .ticks {

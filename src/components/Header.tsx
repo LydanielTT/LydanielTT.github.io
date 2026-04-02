@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import { useState, type RefObject } from 'react';
 import data from '../data.json';
 import { useScrollY } from '../hooks/useScrollY';
 import { useTheme } from '../hooks/useTheme';
 import './Header.scss';
 import { Toggle } from './Toggle';
 
-export const Header = () => {
+export const Header = ({ sectionRef }: { sectionRef: RefObject<HTMLDivElement | null> }) => {
   const { dark, toggle } = useTheme();
   const [on, setOn] = useState(!!dark);
-  const scrollY = useScrollY();
+  const scrollY = useScrollY(sectionRef);
   const collapsed = scrollY > 120;
 
   return (
