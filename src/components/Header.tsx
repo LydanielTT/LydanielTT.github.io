@@ -31,11 +31,11 @@ export const Header = ({ sectionRef }: { sectionRef: RefObject<HTMLDivElement | 
       </div>
       <div className="hero">
         <svg className="button-icon" role="presentation" aria-hidden="true">
-          <use href="javascript-icon.svg"></use>
+          <use href="/icons.svg#javascript-icon"></use>
         </svg>
         /
         <svg className="button-icon" role="presentation" aria-hidden="true">
-          <use href="terminal.svg"></use>
+          <use href="/icons.svg#terminal-icon"></use>
         </svg>
       </div>
       <header className="cv-header">
@@ -57,7 +57,7 @@ export const Header = ({ sectionRef }: { sectionRef: RefObject<HTMLDivElement | 
         </div>
         <div className="cv-header-title">
           {data.title.split('\n').map((line) => (
-            <p key={line}>{line}</p>
+            <p className="job-title" key={line}>{line}</p>
           ))}
         </div>
       </header>

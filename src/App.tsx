@@ -1,15 +1,23 @@
 import { useRef } from 'react';
 import './App.css';
+import { Animation } from './components/Animation';
 import { Contact } from './components/Contact';
+import { Education } from './components/Education';
+import { Experience } from './components/Experience';
 import { Header } from './components/Header';
 import { Language } from './components/Language';
 import { ProgressRing } from './components/ProgressRing';
+import { ScrollDownButton } from './components/ScrollDownButton';
 import { Skills } from './components/Skills';
-import { Education } from './components/Education';
-import { Experience } from './components/Experience';
-import { Animation } from './components/Animation';
+import { useScrollProgress } from './hooks/useScrollProgress';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
+
 export const App = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { progress } = useScrollProgress(sectionRef);
+
+  const progressPercent = Math.round(progress * 100);
+
   return (
     <div id="main-container" ref={sectionRef}>
       <section id="center">
@@ -34,11 +42,12 @@ export const App = () => {
       <Experience />
 
       <Education />
-      <div className="ticks"></div>
-      <div id="spacer"></div>
+
       <Animation />
       {/* <ExperienceHelix scrollY={scrollY} /> */}
-      <ProgressRing sectionRef={sectionRef} />
+      <ProgressRing progress={progress} totalPage={12} />
+      {progressPercent !== 0 && <ScrollToTopButton />}
+      {progressPercent !== 100 && <ScrollDownButton />}
     </div>
   );
 };

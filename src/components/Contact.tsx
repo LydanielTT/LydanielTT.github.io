@@ -15,7 +15,7 @@ export const Contact = () => {
         <li>
           <a href={data.contact.linkedin} target="_blank">
             <svg className="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#github-icon"></use>
+              <use href="/icons.svg#linkedin-icon"></use>
             </svg>
             Linkedin
           </a>

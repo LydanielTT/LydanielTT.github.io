@@ -112,9 +112,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  /* to better centered content inside */
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
+
   @media (max-width: 1024px) {
     background-image: url('/background-mobile.png');
     background-repeat: no-repeat;

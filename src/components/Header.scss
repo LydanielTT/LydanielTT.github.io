@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   .cv-theme-toggle {
     position: absolute;
@@ -88,5 +89,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .job-title {    
+    color: var(--text-h);
   }
 }
