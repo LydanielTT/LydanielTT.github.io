@@ -1,11 +1,11 @@
 #animated-block {
   animation-timeline: --custom_name_for_timeline;
   animation-name: rolling;
-  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  animation-duration: 2ms; /* Firefox requires this to apply the animation */
   animation-fill-mode: both;
   z-index: 0;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -23,7 +23,7 @@
     filter: hue-rotate(0deg);
   }
   25% {
-    transform: rotate(180deg) scale(0.6);
+    transform: rotate(180deg) scale(1);
     border-radius: 50%;
     filter: hue-rotate(90deg);
   }
