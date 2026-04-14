@@ -12,6 +12,8 @@ import { Skills } from './components/Skills';
 import { useScrollProgress } from './hooks/useScrollProgress';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 
+const TOTAL_PAGES = 12;
+
 export const App = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { progress } = useScrollProgress(sectionRef);
@@ -45,7 +47,7 @@ export const App = () => {
 
       <Animation />
       {/* <ExperienceHelix scrollY={scrollY} /> */}
-      <ProgressRing progress={progress} totalPage={12} />
+      <ProgressRing progress={progress} totalPage={TOTAL_PAGES} />
       {progressPercent !== 0 && <ScrollToTopButton />}
       {progressPercent !== 100 && <ScrollDownButton />}
     </div>
