@@ -1,0 +1,25 @@
+.cv-company-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &--icon svg,
+  &--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--monogram {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+    border: none;
+  }
+}
