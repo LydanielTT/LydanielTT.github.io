@@ -25,6 +25,22 @@
     box-shadow: var(--shadow);
   }
 
+  .cv-company-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+
+    .cv-experience-header {
+      text-align: left;
+    }
+
+    .cv-role,
+    .cv-company {
+      margin: 0;
+    }
+  }
+
   ul {
     list-style: none;
     padding: 0;
@@ -49,6 +65,27 @@
         height: 5px;
         border-radius: 50%;
         background: var(--accent);
+      }
+    }
+  }
+
+  .cv-tech-badges {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+
+    li {
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      font-size: 12px;
+      line-height: 1.5;
+
+      &::before {
+        display: none;
       }
     }
   }

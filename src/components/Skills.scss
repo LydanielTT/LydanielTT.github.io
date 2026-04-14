@@ -1,7 +1,12 @@
 .cv-skills {
   display: flex;
   flex-direction: column;
-
+  background: var(--bg);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+  
   // Expertise skills — pill tags
   &:first-child ul {
     list-style: none;

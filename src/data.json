@@ -54,67 +54,65 @@
   ],
   "experience": [
     {
-      "role": "Fullstack developer JS — permanent",
+      "role": "Fullstack Developer JS",
       "company": "Ask for the moon",
-      "period": "2025 (May) — now",
+      "period": "May 2025 — Present",
+      "logo": { "image": "/logos/ask-for-the-moon.png", "initials": "AftM", "color": "#5b3dd9" },
       "bullets": [
         "Developed and deployed full-stack applications powering AI-driven business assistants, enabling faster access to expert knowledge",
         "Designed scalable web architectures and built end-to-end features integrating conversational AI",
         "Partnered with AI researchers, product managers, and designers to translate advanced models into impactful business solutions",
-        "Frameworks: ExpressJS, React 17 (Typescript ES6), SCSS, RabbitMQ, PostHog, ELK"
-      ]
+        "Migrate libs to reduce tech debt: -> React 18, -> tanStack 5"
+      ],
+      "tech": ["ExpressJS", "React 17-18", "TanStack 4-5", "TypeScript", "SCSS", "RabbitMQ", "PostHog", "ELK"]
     },
     {
-      "role": "Software Engineer — Freelance / self-employed",
+      "role": "Software Engineer — Freelance",
       "company": "Web app tracker",
-      "period": "2024 (January) — 2025 (April)",
+      "period": "Jan 2024 — Apr 2025",
       "bullets": [
-        "Developed applications for tracking performance statistics on video games (Valorant, CS2) using React and Node.js (Express), GraphQL/apollo as well as Nginx",
-        "CI/CD: Docker, Git",
+        "Built web applications tracking performance statistics for Valorant and CS2",
         "Trained an individual transitioning into web development",
-        "Self-taught in application/game development using Unity (C#)",
-        "Business plan"
-      ]
+        "Self-taught game development in Unity (C#); authored the product business plan"
+      ],
+      "tech": ["React", "Node.js", "Express", "GraphQL", "Apollo", "Nginx", "Docker", "Unity", "C#"]
     },
     {
-      "role": "Software Engineer — FullStack JS",
+      "role": "Software Engineer — Fullstack JS",
       "company": "Société Générale (Winside Technology)",
-      "period": "2021 — 2024 (June)",
+      "period": "2021 — Jun 2024",
+      "logo": { "icon": "sg-icon", "initials": "SG", "color": "#e60028" },
       "bullets": [
-        "Legal tools hub for lawyers, including litigation handlers and email campaigns",
-        "Frameworks: NestJS 6-9, React 17 (Typescript ES6), SCSS, PostgreSQL",
-        "Tools: Formik, Yup, TypeORM, CDN deployment, jest unit test, Webpack, easy-peasy, oAuth 2.0",
-        "CI/CD: Github actions, Jenkins, Git, sonarQube, Kibana, Logstash, Docker",
-        "React applications, REST APIs, database creation, deployment, and monitoring",
-        "Strong involvement in technical, design, and product decisions",
-        "Cross-functional work on legal applications: knowledge pages, file management, multi-page forms, and public repositories",
-        "Development of reusable services and widgets used across multiple legal department applications"
-      ]
+        "Built a legal tools hub for lawyers, including litigation handlers and email campaigns",
+        "Designed REST APIs, databases, deployment and monitoring pipelines",
+        "Drove technical, design, and product decisions cross-functionally",
+        "Developed reusable services and widgets shared across multiple legal department applications"
+      ],
+      "tech": ["NestJS", "React 17", "TypeScript", "SCSS", "PostgreSQL", "TypeORM", "Formik", "Yup", "Webpack", "Jest", "OAuth 2.0", "GitHub Actions", "Jenkins", "SonarQube", "Kibana", "Logstash", "Docker"]
     },
     {
       "role": "Software Engineer — Back-end Java",
       "company": "AG2R La Mondiale (Capgemini Paris)",
       "period": "2020 — 2021",
+      "logo": { "icon":"ag2r-icon", "initials": "AG2R", "color": "#003876" },
       "bullets": [
-        "Card payment screen for services outside of insurance contracts",
-        "Frameworks: Springboot Java / React",
-        "Tools: Maven, Git, lombok, JWT token, oAuth 2.0",
-        "Design of REST APIs and consumption of payment services from an external partner",
-        "Development of the payment journey integrating an iFrame from an existing application (Proof of Concept)"
-      ]
+        "Built the card payment screen for services outside of insurance contracts",
+        "Designed REST APIs integrating a third-party payment partner",
+        "Developed an iFrame-based payment journey as a Proof of Concept"
+      ],
+      "tech": ["Spring Boot", "Java", "React", "Maven", "Lombok", "JWT", "OAuth 2.0"]
     },
     {
       "role": "Software Engineer — Front-end",
       "company": "Navy Federal Credit Union (Capgemini US)",
       "period": "2019 — 2020",
+      "logo": { "icon":"nfcu-icon", "initials": "NFCU", "color": "#003a70" },
       "bullets": [
-        "Customer dashboard for credit card",
-        "Migrated front-end applications from AngularJS/Backbase to React 16 (TS ES6)",
-        "CI/CD: azure devOps, ElasticSearch, Kibana, Grafana, sonarQube",
-        "SCRUM agile methodology, using Azure devOps to handle tickets",
-        "Tools: Redux, form validation Yup, load testing, jest UT, e2e tests Cucumber",
-        "Sandbox application for internal hackathon + boilerplate code for future projects (React, Nginx)"
-      ]
+        "Built the customer dashboard for credit card services",
+        "Migrated front-end applications from AngularJS/Backbase to React 16",
+        "Authored a sandbox application for an internal hackathon and boilerplate code for future projects"
+      ],
+      "tech": ["React 16", "TypeScript", "Redux", "Yup", "Jest", "Cucumber", "Azure DevOps", "Elasticsearch", "Kibana", "Grafana", "SonarQube", "Nginx"]
     }
   ],
   "education": [
