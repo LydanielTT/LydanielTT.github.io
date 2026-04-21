@@ -26,7 +26,8 @@
     border-color: var(--accent-border);
   }
 
-  .button-icon {
-    color: var(--text-h);
+  .button-scroll {
+    color: var(--bg);
+    filter: invert(1) brightness(2);
   }
 }

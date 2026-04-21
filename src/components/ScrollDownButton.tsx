@@ -10,7 +10,7 @@ export const ScrollDownButton = () => {
 
   return (
     <button className="scroll-button" aria-label="Scroll to next section" onClick={handleClick}>
-      <svg className="button-icon" role="presentation" aria-hidden="true">
+      <svg className="button-scroll" role="presentation" aria-hidden="true">
         <use href="/icons.svg#arrow-down-icon"></use>
       </svg>
     </button>
