@@ -27,10 +27,13 @@
       border-radius: 50%;
       z-index: 50;
     }
-    .button-icon {
-      color: var(--text-h);
+
+    .button-scroll {
+      color: var(--bg);
+      filter: invert(1) brightness(2);
     }
   }
+
   .placeholder {
     font-family: var(--mono);
     font-size: 11px;

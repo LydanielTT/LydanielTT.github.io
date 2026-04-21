@@ -12,7 +12,7 @@ export const ScrollToTopButton = () => {
     <div className="button-up">
       <div className='button-container'>
         <button aria-label="Scroll to top" onClick={handleClick}>
-          <svg className="button-icon" role="presentation" aria-hidden="true">
+          <svg className="button-scroll" role="presentation" aria-hidden="true">
             <use href="/icons.svg#arrow-up-icon"></use>
           </svg>
         </button>
