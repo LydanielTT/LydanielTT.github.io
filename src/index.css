@@ -84,6 +84,11 @@ h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
+  text-shadow:                                              
+    -1px -1px 0 var(--bg),                                                                                                  
+     1px -1px 0 var(--bg),
+    -1px  1px 0 var(--bg),                                                                                                  
+     1px  1px 0 var(--bg); 
 }
 
 h1 {

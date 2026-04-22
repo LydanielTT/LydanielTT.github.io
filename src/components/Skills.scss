@@ -6,7 +6,7 @@
   border: 1px solid var(--border);
   padding: 24px 28px;
   box-shadow: var(--shadow);
-  
+
   // Expertise skills — pill tags
   &:first-child ul {
     list-style: none;
@@ -27,6 +27,4 @@
       line-height: 1.5;
     }
   }
-
-  // Languages — clean rows
 }
