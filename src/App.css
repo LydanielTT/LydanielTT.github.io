@@ -122,7 +122,7 @@
   }
 
   @media (max-width: 1024px) {
-    background-image: url('/background-mobile.png');
+    /* background-image: url('/background-mobile.png'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
