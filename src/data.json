@@ -55,7 +55,7 @@
   "experience": [
     {
       "role": "Fullstack Developer JS",
-      "company": "Ask for the moon",
+      "company": "Ask for the moon - Paris",
       "period": "May 2025 — Present",
       "logo": { "image": "/logos/ask-for-the-moon.png", "initials": "AftM", "color": "#5b3dd9" },
       "bullets": [
@@ -79,7 +79,7 @@
     },
     {
       "role": "Software Engineer — Fullstack JS",
-      "company": "Société Générale (Winside Technology)",
+      "company": "Société Générale - Greater Paris Area",
       "period": "2021 — Jun 2024",
       "logo": { "icon": "sg-icon", "initials": "SG", "color": "#e60028" },
       "bullets": [
@@ -92,7 +92,7 @@
     },
     {
       "role": "Software Engineer — Back-end Java",
-      "company": "AG2R La Mondiale (Capgemini Paris)",
+      "company": "AG2R La Mondiale - Paris",
       "period": "2020 — 2021",
       "logo": { "icon":"ag2r-icon", "initials": "AG2R", "color": "#003876" },
       "bullets": [
@@ -104,7 +104,7 @@
     },
     {
       "role": "Software Engineer — Front-end",
-      "company": "Navy Federal Credit Union (Capgemini US)",
+      "company": "Navy Federal Credit Union - Washington D.C, USA",
       "period": "2019 — 2020",
       "logo": { "icon":"nfcu-icon", "initials": "NFCU", "color": "#003a70" },
       "bullets": [
@@ -113,6 +113,21 @@
         "Authored a sandbox application for an internal hackathon and boilerplate code for future projects"
       ],
       "tech": ["React 16", "TypeScript", "Redux", "Yup", "Jest", "Cucumber", "Azure DevOps", "Elasticsearch", "Kibana", "Grafana", "SonarQube", "Nginx"]
+    },
+    {
+      "role": "Software Engineer — Front-end",
+      "company": "Orange Bank - Paris",
+      "period": "2017 — 2019",
+      "logo": { "icon": "orange-bank-icon", "initials": "OB", "color": "#ff7900" },
+      "bullets": [
+        "Built the web and mobile subscription journey for new bank customers",
+        "Developed the public-facing landing pages presenting the bank's offers",
+        "Integrated third-party services via external APIs and iFrames (Ingenico, Salesforce, QuickSign, SAB, Google)",
+        "Ensured cross-device responsiveness and accessibility across the subscription flow",
+        "Worked in a SCRUM team within a broader SAFe framework",
+        "Took on light management responsibilities towards the end of the mission, with strong involvement in technical decisions, design and product values"
+      ],
+      "tech": ["AngularJS", "Backbase", "JavaScript", "REST APIs", "iFrame integrations"]
     }
   ],
   "education": [
