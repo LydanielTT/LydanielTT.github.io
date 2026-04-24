@@ -109,7 +109,7 @@
   scroll-timeline-name: --custom_name_for_timeline;
   scroll-snap-type: y mandatory;
   height: 100vh;
-  background-image: url('/background.png');
+  /* background-image: url('/background.png'); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
