@@ -1,132 +1,69 @@
 {
+  "available": true,
   "name": {
     "first": "Daniel",
     "last": "LY"
   },
-  "title": "Fullstack JS Developer\nReact / NodeJS",
-  "contact": {
-    "linkedin": "https://www.linkedin.com/in/daniel-ly-5a9aab12b",
-    "github": "https://github.com/LydanielTT"
-  },
   "skills": [
-    {
-      "emoji": "🌐",
-      "skill": "Javascript / Typescript (React, Angular, NodeJs)"
-    },
-    {
-      "emoji": "🎨",
-      "skill": "Image processing (OpenCV)"
-    },
-    {
-      "emoji": "💾",
-      "skill": "Database (postgreSQL, Oracle, MongoDB)"
-    },
-    {
-      "emoji": "🔄",
-      "skill": "CI/CD (Jenkins, Azure devOps, Kubernetes, github actions)"
-    },
-    {
-      "emoji": "🐳",
-      "skill": "Docker"
-    },
-    {
-      "emoji": "🔒",
-      "skill": "oAuth 2.0"
-    },
-    {
-      "emoji": "🔍",
-      "skill": "Monitoring (ELK, Grafana, Lens, PostHog 🦔)"
-    }
+    { "id": "js", "emoji": "🌐" },
+    { "id": "image", "emoji": "🎨" },
+    { "id": "db", "emoji": "💾" },
+    { "id": "cicd", "emoji": "🔄" },
+    { "id": "docker", "emoji": "🐳" },
+    { "id": "oauth", "emoji": "🔒" },
+    { "id": "monitoring", "emoji": "🔍" }
   ],
   "languages": [
-    {
-      "lang": "English",
-      "level": "fluent"
-    },
-    {
-      "lang": "French",
-      "level": "fluent"
-    },
-    {
-      "lang": "Vietnamese",
-      "level": "native"
-    }
+    { "lang": "English", "levelId": "language.fluent" },
+    { "lang": "French", "levelId": "language.fluent" },
+    { "lang": "Vietnamese", "levelId": "language.native" }
   ],
   "experience": [
     {
-      "role": "Fullstack Developer JS",
+      "id": "askforthemoon",
       "company": "Ask for the moon - Paris",
       "period": "May 2025 — Present",
       "logo": { "image": "/logos/ask-for-the-moon.png", "initials": "AftM", "color": "#5b3dd9" },
-      "bullets": [
-        "Developed and deployed full-stack applications powering AI-driven business assistants, enabling faster access to expert knowledge",
-        "Designed scalable web architectures and built end-to-end features integrating conversational AI",
-        "Partnered with AI researchers, product managers, and designers to translate advanced models into impactful business solutions",
-        "Migrate libs to reduce tech debt: -> React 18, -> tanStack 5"
-      ],
+      "bulletCount": 4,
       "tech": ["ExpressJS", "React 17-18", "TanStack 4-5", "TypeScript", "SCSS", "RabbitMQ", "PostHog", "ELK"]
     },
     {
-      "role": "Software Engineer — Freelance",
-      "company": "Web app tracker",
+      "id": "freelance",
+      "company": "Développeur Indépendant",
       "period": "Jan 2024 — Apr 2025",
-      "bullets": [
-        "Built web applications tracking performance statistics for Valorant and CS2",
-        "Trained an individual transitioning into web development",
-        "Self-taught game development in Unity (C#); authored the product business plan"
-      ],
+      "bulletCount": 3,
       "tech": ["React", "Node.js", "Express", "GraphQL", "Apollo", "Nginx", "Docker", "Unity", "C#"]
     },
     {
-      "role": "Software Engineer — Fullstack JS",
+      "id": "sg",
       "company": "Société Générale - Greater Paris Area",
       "period": "2021 — Jun 2024",
       "logo": { "icon": "sg-icon", "initials": "SG", "color": "#e60028" },
-      "bullets": [
-        "Built a legal tools hub for lawyers, including litigation handlers and email campaigns",
-        "Designed REST APIs, databases, deployment and monitoring pipelines",
-        "Drove technical, design, and product decisions cross-functionally",
-        "Developed reusable services and widgets shared across multiple legal department applications"
-      ],
+      "bulletCount": 4,
       "tech": ["NestJS", "React 17", "TypeScript", "SCSS", "PostgreSQL", "TypeORM", "Formik", "Yup", "Webpack", "Jest", "OAuth 2.0", "GitHub Actions", "Jenkins", "SonarQube", "Kibana", "Logstash", "Docker"]
     },
     {
-      "role": "Software Engineer — Back-end Java",
+      "id": "ag2r",
       "company": "AG2R La Mondiale - Paris",
       "period": "2020 — 2021",
-      "logo": { "icon":"ag2r-icon", "initials": "AG2R", "color": "#003876" },
-      "bullets": [
-        "Built the card payment screen for services outside of insurance contracts",
-        "Designed REST APIs integrating a third-party payment partner",
-        "Developed an iFrame-based payment journey as a Proof of Concept"
-      ],
+      "logo": { "icon": "ag2r-icon", "initials": "AG2R", "color": "#003876" },
+      "bulletCount": 3,
       "tech": ["Spring Boot", "Java", "React", "Maven", "Lombok", "JWT", "OAuth 2.0"]
     },
     {
-      "role": "Software Engineer — Front-end",
+      "id": "nfcu",
       "company": "Navy Federal Credit Union - Washington D.C, USA",
       "period": "2019 — 2020",
-      "logo": { "icon":"nfcu-icon", "initials": "NFCU", "color": "#003a70" },
-      "bullets": [
-        "Built the customer dashboard for credit card services",
-        "Migrated front-end applications from AngularJS/Backbase to React 16",
-        "Authored a sandbox application for an internal hackathon and boilerplate code for future projects"
-      ],
+      "logo": { "icon": "nfcu-icon", "initials": "NFCU", "color": "#003a70" },
+      "bulletCount": 3,
       "tech": ["React 16", "TypeScript", "Redux", "Yup", "Jest", "Cucumber", "Azure DevOps", "Elasticsearch", "Kibana", "Grafana", "SonarQube", "Nginx"]
     },
     {
-      "role": "Software Engineer — Front-end",
+      "id": "orangebank",
       "company": "Orange Bank - Paris",
       "period": "2017 — 2019",
       "logo": { "icon": "orange-bank-icon", "initials": "OB", "color": "#ff7900" },
-      "bullets": [
-        "Built the web and mobile subscription journey for new bank customers",
-        "Developed the public-facing landing pages presenting the bank's offers",
-        "Integrated third-party services via external APIs and iFrames (Ingenico, Salesforce, QuickSign, SAB, Google)",
-        "Ensured cross-device responsiveness and accessibility across the subscription flow",
-        "Worked in a SCRUM team within a broader SAFe framework",
-        "Took on light management responsibilities towards the end of the mission, with strong involvement in technical decisions, design and product values"
-      ],
+      "bulletCount": 5,
       "tech": ["AngularJS", "Backbase", "JavaScript", "REST APIs", "iFrame integrations"]
     }
   ],
@@ -135,18 +72,18 @@
       "year": "2014 — 2017",
       "degree": "Engineering school",
       "school": "Ecole polytechnique of the University of Orleans",
-      "details": [
-        "Embedded vision",
-        "Home automation"
-      ]
+      "details": ["Embedded vision", "Home automation"]
     },
     {
       "year": "2016",
       "degree": "Baccalauréat of Sciences (Post \"A-level\" + 3)",
       "school": "Université du Québec à Montréal, Canada",
-      "details": [
-        "Security, Data and web development"
-      ]
+      "details": ["Security, Data and web development"]
     }
-  ]
+  ],
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/daniel-ly-5a9aab12b",
+    "github": "https://github.com/LydanielTT"
+  },
+  "projects": []
 }
