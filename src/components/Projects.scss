@@ -1,0 +1,61 @@
+.cv-projects-empty {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  text-align: center;
+  font-style: italic;
+  color: var(--text);
+}
+
+.cv-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.cv-project-card {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

@@ -1,10 +1,13 @@
+import { useIntl } from 'react-intl';
 import data from '../data.json';
 
 export const Education = () => {
+  const intl = useIntl();
+
   return (
     <>
       <section>
-        <h2>Education</h2>
+        <h2>{intl.formatMessage({ id: 'section.education' })}</h2>
       </section>
       {data.education.map((edu) => (
         <section key={edu.school} className="cv-timeline-item">
