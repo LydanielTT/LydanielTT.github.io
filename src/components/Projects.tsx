@@ -20,8 +20,10 @@ export const Projects = () => {
         <h2>{intl.formatMessage({ id: 'section.projects' })}</h2>
       </section>
       {projects.length === 0 ? (
-        <section className="cv-projects-empty">
-          <p>{intl.formatMessage({ id: 'projects.empty' })}</p>
+        <section>
+          <div className="cv-projects-empty">
+            <p>{intl.formatMessage({ id: 'projects.empty' })}</p>
+          </div>
         </section>
       ) : (
         <section className="cv-projects-grid">
