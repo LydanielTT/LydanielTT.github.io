@@ -1,8 +1,12 @@
 .cv-projects-empty {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
   text-align: center;
-  opacity: 0.45;
   font-style: italic;
-  padding: 2rem 0;
+  color: var(--text);
 }
 
 .cv-projects-grid {
